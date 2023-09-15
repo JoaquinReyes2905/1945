@@ -38,7 +38,7 @@ namespace Project8
                     visible = false;
                 }
             }
-            else
+            else 
             {
                 PosBalaX = positionX;
                 PosBalaY = positionY;

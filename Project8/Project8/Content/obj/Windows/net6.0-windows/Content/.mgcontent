@@ -4,11 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Alumno/Desktop/Project8/Project8/Content/img/disparo.png</File>
-    <File>C:/Users/Alumno/Desktop/Project8/Project8/Content/img/fondo.jpg</File>
-    <File>C:/Users/Alumno/Desktop/Project8/Project8/Content/img/player.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/disparo.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/enemigo.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/fondo.jpg</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/player.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
