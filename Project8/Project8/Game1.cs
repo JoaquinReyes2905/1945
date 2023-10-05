@@ -4,26 +4,38 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Security.Principal;
 using System.Windows.Forms.VisualStyles;
 
 namespace Project8
 {
     public class Game1 : Game
     {
+
+        //Clase Enemigo
         List<Enemigo> enemigos;
-        private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
-        Texture2D backgroundTexture;
+        Texture2D enemy;
+        List<Rectangle> enemigoPosisicion = new List<Rectangle>();
+
+        //Clase Jugador
         Player player;
+
+        //Fondo
+        Texture2D backgroundTexture;
+
+        //Varibales
         DateTime timew;
         DateTime tiempoActual;
         TimeSpan tiempo;
-        Texture2D enemy;
+        Random rnd;
+        private GraphicsDeviceManager _graphics;
+        private SpriteBatch _spriteBatch;
+        
         public Game1()
         {
-                _graphics = new GraphicsDeviceManager(this);
-                Content.RootDirectory = "Content";
-                IsMouseVisible = false;
+            _graphics = new GraphicsDeviceManager(this);
+             Content.RootDirectory = "Content";
+             IsMouseVisible = false;
             _graphics.PreferredBackBufferWidth = 1200;
             _graphics.PreferredBackBufferWidth = 720;
             _graphics.IsFullScreen = true;
@@ -41,15 +53,21 @@ namespace Project8
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            
             // TODO: use this.Content to load your game content here
+            
+            //Clase Enemigos
             enemigos = new List<Enemigo>();
-            player = new Player();
-            timew = DateTime.Now;
-           
             enemy = Content.Load<Texture2D>("img/enemigo");
+            
+            //Clase jugador
+            player = new Player();
             player.img = Content.Load<Texture2D>("img/player");
             player.disparoimg = Content.Load<Texture2D>("img/disparo");
+            
+            //Otras Variables
+            timew = DateTime.Now;
+            rnd = new Random();
             backgroundTexture = Content.Load<Texture2D>("img/fondo");          
         }
 
@@ -62,13 +80,13 @@ namespace Project8
             tiempo = tiempoActual - timew;
             if (tiempo.Seconds == 2)
             {
-                enemigos.Add(new Enemigo());
+                enemigos.Add(new Enemigo(rnd.Next( 0 , (Window.ClientBounds.Width - enemy.Height) ) , rnd.Next(-300 , -200)));
                 timew = DateTime.Now;
             }
 
             KeyboardState emisor = Keyboard.GetState();
             player.Disparar();
-
+            
             if (player.positionX >= 0)
             {
                 if (emisor.IsKeyDown(Keys.A))
@@ -101,24 +119,43 @@ namespace Project8
             {
                     player.visible = true;
             }
+            foreach (Enemigo r in enemigos)
+            {
+                r.mover(enemy);
+                enemigoPosisicion.Add(new Rectangle(r.positionX, r.positionY, enemy.Width, enemy.Height));
+                if(new Rectangle(r.positionX, r.positionY, enemy.Width, enemy.Height).Intersects(new Rectangle((player.PosBalaX + (player.img.Width / 2)) - 3, player.PosBalaY - 20, player.disparoimg.Width, player.disparoimg.Height)))
+                {
+                    enemigos.Remove(r);
+                    player.visible = false;
+                    break;
+                }
+            }
            
+            for(int i = 0; i < enemigos.Count; i++)
+            {
+                if (enemigos[i].positionY > Window.ClientBounds.Height)
+                {
+                    enemigos.RemoveAt(i);
+                }
+            }
 
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.FloralWhite);
+            GraphicsDevice.Clear(Color.Green);
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
+            _spriteBatch.Draw(backgroundTexture , new Rectangle( 0 , 0 , Window.ClientBounds.Width , Window.ClientBounds.Height) , Color.White);
             if (player.visible == true)
             {
                 _spriteBatch.Draw(player.disparoimg, new Rectangle((player.PosBalaX + (player.img.Width/2))-3, player.PosBalaY - 20, player.disparoimg.Width, player.disparoimg.Height), Color.White);
             }
-            for (int i = 0; i < enemigos.Count; i++)
-            {
-                _spriteBatch.Draw(enemy, new Rectangle(0, ((enemigos[i].positionY + i)*enemy.Height)+i , enemy.Width, enemy.Height), Color.White);
+            foreach (Enemigo r in enemigos)
+            {    
+                    _spriteBatch.Draw(enemy, new Rectangle(r.positionX, r.positionY, enemy.Width, enemy.Height), Color.White);
             }
             _spriteBatch.Draw(player.img , new Rectangle(player.positionX, player.positionY, player.img.Width, player.img.Height), Color.White);
             _spriteBatch.End();

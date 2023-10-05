@@ -14,6 +14,21 @@ namespace Project8
         public int positionX = 0;
         public int positionY= 0;
         public Texture2D img;
+        int velocidad = 1;
         public Enemigo() { }
+
+        public Enemigo(int positionX , int positionY)
+        {
+            this.positionX = positionX;
+            this.positionY = positionY;
+        }
+
+        public void mover(Texture2D enemy)
+        {
+            if(positionY <= Window.ClientBounds.Height + enemy.Height)
+            {
+                positionY += velocidad;
+            }
+        }
     }
 }
