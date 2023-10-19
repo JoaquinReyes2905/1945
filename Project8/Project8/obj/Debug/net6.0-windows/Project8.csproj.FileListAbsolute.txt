@@ -120,3 +120,6 @@ C:\Users\Alumno\source\repos\1945\Project8\Project8\obj\Debug\net6.0-windows\ref
 C:\Users\Alumno\source\repos\1945\Project8\Project8\obj\Debug\net6.0-windows\Project8.pdb
 C:\Users\Alumno\source\repos\1945\Project8\Project8\obj\Debug\net6.0-windows\Project8.genruntimeconfig.cache
 C:\Users\Alumno\source\repos\1945\Project8\Project8\obj\Debug\net6.0-windows\ref\Project8.dll
+C:\Users\Alumno\source\repos\JoaquinReyes2905\1945\Project8\Project8\bin\Debug\net6.0-windows\Content\img\arial.xnb
+C:\Users\Alumno\source\repos\JoaquinReyes2905\1945\Project8\Project8\bin\Debug\net6.0-windows\Content\img\nube.xnb
+C:\Users\Alumno\source\repos\JoaquinReyes2905\1945\Project8\Project8\bin\Debug\net6.0-windows\Content\img\enemigo2.xnb

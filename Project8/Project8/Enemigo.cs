@@ -14,13 +14,26 @@ namespace Project8
         public int positionX = 0;
         public int positionY= 0;
         public Texture2D img;
-        int velocidad = 1;
+        public int velocidad = 2;
         public Enemigo() { }
 
         public Enemigo(int positionX , int positionY)
         {
             this.positionX = positionX;
             this.positionY = positionY;
+        }
+        public Enemigo(int positionX, int positionY, int velocidad)
+        {
+            this.positionX = positionX;
+            this.positionY = positionY;
+            this.velocidad = velocidad;
+        }
+        public Enemigo(int positionX, int positionY, int velocidad, Texture2D img)
+        {
+            this.positionX = positionX;
+            this.positionY = positionY;
+            this.velocidad = velocidad;
+            this.img = img;
         }
 
         public void mover(Texture2D enemy)

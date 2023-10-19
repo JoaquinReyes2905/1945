@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\source\\repos\\1945\\Project8\\Project8\\Project8.csproj": {}
+    "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\Project8\\Project8\\Project8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\source\\repos\\1945\\Project8\\Project8\\Project8.csproj": {
+    "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\Project8\\Project8\\Project8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\source\\repos\\1945\\Project8\\Project8\\Project8.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\Project8\\Project8\\Project8.csproj",
         "projectName": "Project8",
-        "projectPath": "C:\\Users\\Alumno\\source\\repos\\1945\\Project8\\Project8\\Project8.csproj",
+        "projectPath": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\Project8\\Project8\\Project8.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\source\\repos\\1945\\Project8\\Project8\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\Project8\\Project8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
