@@ -20,6 +20,8 @@ namespace Project8
         List<Rectangle> enemigoPosisicion = new List<Rectangle>();
         Texture2D nube;
         Texture2D enemy2;
+        Texture2D enemy3;
+
 
         //Obstaculos
         List<Obstaculo> obstaculos = new List<Obstaculo>(); 
@@ -44,7 +46,7 @@ namespace Project8
             _graphics = new GraphicsDeviceManager(this);
              Content.RootDirectory = "Content";
              IsMouseVisible = false;
-            _graphics.PreferredBackBufferWidth = 800;
+            _graphics.PreferredBackBufferWidth = 1280;
             _graphics.PreferredBackBufferWidth = 600;
             _graphics.IsFullScreen = true;
             _graphics.ApplyChanges();
@@ -69,6 +71,7 @@ namespace Project8
             enemy = Content.Load<Texture2D>("img/enemigo");
             nube = Content.Load<Texture2D>("img/nube");
             enemy2 = Content.Load<Texture2D>("img/enemigo2");
+            enemy3 = Content.Load<Texture2D>("img/enemigo3");
             
             //Clase jugador
             player = new Player();

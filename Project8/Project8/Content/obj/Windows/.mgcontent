@@ -4,21 +4,21 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/../../../../../../../Downloads/enemigo2.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/arial.spritefont</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/disparo.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/enemigo.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/enemigo2.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/fondo.jpg</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/nube.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/Project8/Project8/Content/img/player.png</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/arial.spritefont</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/disparo.png</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/enemigo.png</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/enemigo2.png</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/enemy3.webp</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/fondo.jpg</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/nube.png</File>
+    <File>C:/Gomez/1945/Project8/Project8/Content/img/player.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>img/enemigo2.png</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
+    <File>img/enemigo3.webp</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
