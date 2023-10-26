@@ -217,7 +217,7 @@ namespace Project8
             {
                 if (bal.visible == true)
                 {
-                    _spriteBatch.Draw(player.disparoimg, new Rectangle((bal.PosBalaX + (player.img.Width / 2)) - 3, bal.PosBalaY - 20, player.disparoimg.Width, player.disparoimg.Height), Color.White);
+                    _spriteBatch.Draw(player.disparoimg, new Rectangle((bal.PosBalaX + (player.img.Width / 2)) - 10, bal.PosBalaY - 20, player.disparoimg.Width, player.disparoimg.Height), Color.White);
                 }
             }
             foreach (Enemigo r in enemigos)
