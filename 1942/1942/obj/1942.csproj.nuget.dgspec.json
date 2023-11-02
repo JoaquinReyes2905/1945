@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1942\\1942\\1942\\1942.csproj": {}
+    "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\1942\\1942\\1942.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1942\\1942\\1942\\1942.csproj": {
+    "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\1942\\1942\\1942.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1942\\1942\\1942\\1942.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\1942\\1942\\1942.csproj",
         "projectName": "1942",
-        "projectPath": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1942\\1942\\1942\\1942.csproj",
+        "projectPath": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\1942\\1942\\1942.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1942\\1942\\1942\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\source\\repos\\JoaquinReyes2905\\1945\\1942\\1942\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",

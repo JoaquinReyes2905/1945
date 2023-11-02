@@ -14,7 +14,6 @@ namespace _1942
         List<Rectangle> enemigoPosisicion = new List<Rectangle>();
         Texture2D nube;
         Texture2D enemy2;
-        Texture2D enemy3;
 
 
         //Obstaculos
@@ -23,6 +22,12 @@ namespace _1942
         //Clase Jugador
         Player player;
         List<Bala> balasJug = new List<Bala>();
+        Texture2D avionInicial;
+        Texture2D movIz1;
+        Texture2D movDe1;
+        Texture2D movIz2;
+        Texture2D movDe2;
+
         //Fondo
         Texture2D backgroundTexture;
 
@@ -41,6 +46,8 @@ namespace _1942
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         SpriteFont fuente;
+        int cont = 0, pas = 0, cos=0;
+        
         public Game1()
         {
 
@@ -73,8 +80,12 @@ namespace _1942
             //Clase jugador
             player = new Player();
             bala = new Bala();
-            player.img = Content.Load<Texture2D>("img/player");
+            avionInicial = Content.Load<Texture2D>("avionInicial");
             player.disparoimg = Content.Load<Texture2D>("img/disparo");
+            movIz1 = Content.Load<Texture2D>("movIz1");
+            movIz2 = Content.Load<Texture2D>("movIz2");
+            movDe1 = Content.Load<Texture2D>("movDe1");
+            movDe2 = Content.Load<Texture2D>("movDe2");
 
             //Otras Variables
             timew = DateTime.Now;
@@ -139,15 +150,36 @@ namespace _1942
                 if (emisor.IsKeyDown(Keys.A))
                 {
                     player.positionX -= 3;
+                    player.img = movIz1;
+                    if (emisor.IsKeyDown(Keys.A) && pas > 10)
+                    {
+                        player.img = movIz2;
+                    }
                 }
             }
+            if (emisor.IsKeyUp(Keys.A))
+            {
+                player.img = avionInicial;
+                pas = 0;
+            }
+
             if (player.positionX <= Window.ClientBounds.Width - player.img.Width)
             {
                 if (emisor.IsKeyDown(Keys.D))
                 {
                     player.positionX += 3;
+                    player.img = movDe1;
+                    if (emisor.IsKeyDown(Keys.D) && cos > 10)
+                    {
+                        player.img = movDe2;
+                    }
+                }
+                if (emisor.IsKeyUp(Keys.D))
+                {
+                    cos = 0;
                 }
             }
+
             if (player.positionY >= 0)
             {
                 if (emisor.IsKeyDown(Keys.W))
@@ -157,13 +189,17 @@ namespace _1942
             }
 
             if (player.positionY <= Window.ClientBounds.Height - player.img.Height)
+            {
                 if (emisor.IsKeyDown(Keys.S))
                 {
                     player.positionY += 3;
                 }
+            }
+
+   
             // TODO: Add your update logic here
 
-            if (player.disparar == true)
+            if (player.disparar == true && cont > 3)
             {
                 if (emisor.IsKeyDown(Keys.P))
                 {
@@ -174,6 +210,7 @@ namespace _1942
                         b.visible = true;
                     }
                 }
+                cont = 0;
             }
             if(player.municion == 0)
             {
@@ -252,7 +289,9 @@ namespace _1942
                     }
                 }
             }
-
+            cont++;
+            cos++;
+            pas++;
             base.Update(gameTime);
         }
 

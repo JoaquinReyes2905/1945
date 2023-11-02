@@ -4,16 +4,26 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/img/arial.spritefont</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/img/disparo.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/img/enemigo.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/img/enemigo2.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/img/fondo.jpg</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/img/nube.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/img/player.png</File>
-    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1942/1942/1942/Content/municion1.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/avionInicial.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/img/arial.spritefont</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/img/disparo.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/img/enemigo.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/img/enemigo2.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/img/fondo.jpg</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/img/nube.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/img/player.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/movDe1.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/movDe2.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/movIz1.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/movIz2.png</File>
+    <File>C:/Users/Alumno/source/repos/JoaquinReyes2905/1945/1942/1942/1942/Content/municion1.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
